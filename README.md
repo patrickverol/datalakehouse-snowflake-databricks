@@ -75,16 +75,6 @@ If you want to understand the modeling part, go to the modeling folder, where th
 - **Airflow:** task orchestration - http://localhost:8085/
 - **PostgreSQL:** data storage - http://localhost:5780/
 
-## Use Case Explanation
-We will be working with transactional data referred to loan transactions and customers from GeekBankPE (a famous bank around the world).
-
-You have two requirements from different areas of the bank.
-
-- The Marketing area needs to have updated customer data to be able to contact them and make offers.
-- The Finance area requires to have daily loan transactions complemented with customer drivers to be able to analyze them and improve the revenue.
-
-To fulfill with the request, we are going to perform incremental loads and also using techniques like upsert.
-
 --- 
 
 ## Requirements
@@ -116,6 +106,8 @@ Enter a valid email when trying to log in.
  - **internal_host_and_port:** `http://host.docker.internal:8000`
  - **user:** `airbyte`
  - **password:** `password`
+
+---
 
 ## Setup Instructions
 1. Open your terminal.
