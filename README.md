@@ -34,6 +34,40 @@ In addition, this project addresses the main step in building a data lakehouse: 
 
 If you want to understand the modeling part, go to the modeling folder, where the entire resolution of the business problem is developed.
 
+## Databricks Lakehouse Schema
+
+<br>
+    <div align="center">
+        <a><img src="https://github.com/user-attachments/assets/535e22a6-21b6-4cab-a7c7-95d3b369e2ed"></a> 
+    </div>
+</br>
+
+## Databricks Lineage
+
+<br>
+    <div align="center">
+        <a><img src="https://github.com/user-attachments/assets/94ac959d-fa2f-4f39-906e-48c335616ad8"></a> 
+    </div>
+</br>
+
+## Snowflake Lakehouse Schema
+
+<br>
+    <div align="center">
+        <a><img src="https://github.com/user-attachments/assets/5077fe58-bd4f-4c81-b469-4c8b7aee6a29"></a> 
+    </div>
+</br>
+
+## Snowflake Lineage
+
+<br>
+    <div align="center">
+        <a><img src="https://github.com/user-attachments/assets/5fd109e1-974e-4df0-97f5-69e7c34e19a0"></a> 
+    </div>
+</br>
+
+---
+
 ## Installation and configuration
 
 - **Airbyte:** data extraction - http://localhost:56174/
@@ -168,9 +202,9 @@ Enter a valid email when trying to log in.
     - Sync mode should be `Full refresh overwrite`
     - Select `set up connection`
 12. After setting up the connections, you can click on `Sync now` to move data from source to destination, but if you want Airflow to orquestrate the next loads of data, you will need to get connection id and replace into the code of the DAGs.
-    12.1. Select Connections (*left sidebar*), click on the connection you want (*Snowflake or Databricks*), get the link on http bar, it would be something like this: `http://localhost:56174/workspaces/0f607d97-c473-4bd0-8033-e10b047540e9/connections/90a7a5cd-e87a-425c-bd22-5c9da230e795/transformation`
-    12.2. Select the entire code between **connection** and **transformation**, in this example above is: `90a7a5cd-e87a-425c-bd22-5c9da230e795`
-    12.3. Paste the code in the variables that will be created in Airflow, next step.
+    - Select Connections (*left sidebar*), click on the connection you want (*Snowflake or Databricks*), get the link on http bar, it would be something like this: `http://localhost:56174/workspaces/0f607d97-c473-4bd0-8033-e10b047540e9/connections/90a7a5cd-e87a-425c-bd22-5c9da230e795/transformation`
+    - Select the entire code between **connection** and **transformation**, in this example above is: `90a7a5cd-e87a-425c-bd22-5c9da230e795`
+    - Paste the code in the variables that will be created in Airflow, next step.
    
 ---
 
@@ -193,28 +227,28 @@ Enter a valid email when trying to log in.
 2. Go to the path of your projet: `cd data-stack`
 3. Go to the airflow-worker terminal: `docker compose exec airflow-worker bash`
 5. If do you want to inicialize the project in Snowflake:
-    5.1. Enter a name for your project: `dbt init snowflake_datalakehouse`
-    5.2. Which database would you like to use: `snowflake`
-    5.3. Account: `<your_account>` *(You can see that in the email you recieved after created your account)*
-    5.4. Username: `<your_username>` *(You can see that in the email you recieved after created your account)*
-    5.5. Password: `<your_password>`
-    5.6. Role: `ACCOUNTADMIN`
-    5.7. Warehouse: `COMPUTE_WH`
-    5.8. Database: `LAKEHOUSE_DB`
-    5.9. Default Schema: `LAKEHOUSE_SCHEMA`
-    5.10. threads: `10` *(Change that will not make difference)*
-    5.11. Remove examples from models: `rm -r snowflake_datalakehouse/models/*`
-    5.12. Move your own models to the folder models: `cp -r models_snowflake/* snowflake_datalakehouse/models`
-    5.13. Go to the Airflow UI and run the `05_dbt_snowflake_dag`
+    - Enter a name for your project: `dbt init snowflake_datalakehouse`
+    - Which database would you like to use: `snowflake`
+    - Account: `<your_account>` *(You can see that in the email you recieved after created your account)*
+    - Username: `<your_username>` *(You can see that in the email you recieved after created your account)*
+    - Password: `<your_password>`
+    - Role: `ACCOUNTADMIN`
+    - Warehouse: `COMPUTE_WH`
+    - Database: `LAKEHOUSE_DB`
+    - Default Schema: `LAKEHOUSE_SCHEMA`
+    - threads: `10` *(Change that will not make difference)*
+    - Remove examples from models: `rm -r snowflake_datalakehouse/models/*`
+    - Move your own models to the folder models: `cp -r models_snowflake/* snowflake_datalakehouse/models`
+    - Go to the Airflow UI and run the `05_dbt_snowflake_dag`
 6. If do you want to inicialize the project in Databricks:
-    6.1. Enter a name for your project: `dbt init databricks_datalakehouse`
-    6.2. Which database would you like to use: `databricks`
-    6.3. http_path: `<your_http_path>` *(You can create one in Settings -> Developer -> Manage tokens)*
-    6.4. Token: `<your_token>` *(You can create one in Settings -> Developer -> Manage tokens)*
-    6.5. Desired unity catalog option: `use Unity Catalog`
-    6.6. Catalog: `datalakehouse`
-    6.7. Schema: `lakehouse_schema`
-    6.8. threads: `10` *(Change that will not make difference)*
-    6.9. Remove examples from models: `rm -r databricks_datalakehouse/models/*`
-    6.10. Move your own models to the folder models: `cp -r models_databricks/* databricks_datalakehouse/models`
-    6.11. Go to the Airflow UI and run the `07_dbt_databricks_dag`
+    - Enter a name for your project: `dbt init databricks_datalakehouse`
+    - Which database would you like to use: `databricks`
+    - http_path: `<your_http_path>` *(You can create one in Settings -> Developer -> Manage tokens)*
+    - Token: `<your_token>` *(You can create one in Settings -> Developer -> Manage tokens)*
+    - Desired unity catalog option: `use Unity Catalog`
+    - Catalog: `datalakehouse`
+    - Schema: `lakehouse_schema`
+    - threads: `10` *(Change that will not make difference)*
+    - Remove examples from models: `rm -r databricks_datalakehouse/models/*`
+    - Move your own models to the folder models: `cp -r models_databricks/* databricks_datalakehouse/models`
+    - Go to the Airflow UI and run the `07_dbt_databricks_dag`
