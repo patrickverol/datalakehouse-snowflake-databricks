@@ -54,7 +54,7 @@ If you want to understand the modeling part, go to the modeling folder, where th
 
 <br>
     <div align="center">
-        <a><img src="https://github.com/user-attachments/assets/5077fe58-bd4f-4c81-b469-4c8b7aee6a29"></a> 
+        <a><img src="https://github.com/user-attachments/assets/5fd109e1-974e-4df0-97f5-69e7c34e19a0"></a> 
     </div>
 </br>
 
@@ -62,7 +62,7 @@ If you want to understand the modeling part, go to the modeling folder, where th
 
 <br>
     <div align="center">
-        <a><img src="https://github.com/user-attachments/assets/5fd109e1-974e-4df0-97f5-69e7c34e19a0"></a> 
+        <a><img src="https://github.com/user-attachments/assets/5077fe58-bd4f-4c81-b469-4c8b7aee6a29"></a> 
     </div>
 </br>
 
