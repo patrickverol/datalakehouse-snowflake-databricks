@@ -4,18 +4,18 @@
 
 <br>
     <div align="center">
-        <a><img src="https://github.com/user-attachments/assets/743aaf18-a2bc-42d3-a8bd-7edd233fe797"></a> 
+        <a><img src="https://github.com/user-attachments/assets/33da8c2b-0a73-444e-83aa-0624f3cb819a"></a> 
     </div>
 </br>
 
 <div align="center">
-    <a href = "https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" target="_blank"></a>
+    <a href = "https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white" target="_blank"></a>
+    <a href = "https://www.postgresql.org/docs/"><img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" target="_blank"></a>
     <a href = "https://docs.airbyte.com/"><img src="https://img.shields.io/badge/Airbyte-615EFF.svg?style=for-the-badge&logo=Airbyte&logoColor=white" target="_blank"></a>
     <a href = "https://docs.getdbt.com/docs/build/documentation"><img src="https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white" target="_blank"></a>
     <a href = "https://docs.docker.com/"><img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" target="_blank"></a>
-    <a href = "https://www.postgresql.org/docs/"><img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" target="_blank"></a>
     <a href = "https://docs.databricks.com/aws/en/"><img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=Databricks&logoColor=white" target="_blank"></a>
-    <a href = "https://docs.snowflake.com/"><img src="https://img.shields.io/badge/Snowflake-29B5E8?logo=snowflake&logoColor=fff" target="_blank"></a>
+    <a href = "https://docs.snowflake.com/"><img src="https://img.shields.io/badge/Snowflake-29B5E8.svg?style=for-the-badge&logo=Snowflake&logoColor=white" target="_blank"></a>
 </div> 
 
 ## About the project
