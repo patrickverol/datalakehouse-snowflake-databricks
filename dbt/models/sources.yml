@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: lakehouse
+    schema: LAKEHOUSE_SCHEMA
+    tables:
+      - name: stg_dim_product
+      - name: stg_dim_channel
+      - name: stg_dim_customer
+      - name: stg_fact_sales
+      - name: stg_dim_date

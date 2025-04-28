@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: g_sales_by_customer_period
+    description: "Sales data aggregated by customer and time period."
+    columns:
+      - name: sk_customer
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        tests:
+          - not_null
+      - name: sale_year
+        tests:
+          - not_null
+      - name: sale_month
+        tests:
+          - not_null
+      - name: total_sales
+        tests:
+          - not_null
+      - name: total_quantity
+        tests:
+          - not_null
+
+  - name: g_summary_sales_report
+    description: "Summary of sales data by product and year."
+    columns:
+      - name: sk_product
+        tests:
+          - not_null
+          - unique
+      - name: product_name
+        tests:
+          - not_null
+      - name: sale_year
+        tests:
+          - not_null
+      - name: total_sales
+        tests:
+          - not_null
+      - name: total_quantity
+        tests:
+          - not_null
+
+  - name: g_sales_by_product_channel
+    description: "Sales data aggregated by product and channel."
+    columns:
+      - name: sk_product
+        tests:
+          - not_null
+          - unique
+      - name: sk_channel
+        tests:
+          - not_null
+          - unique
+      - name: product_name
+        tests:
+          - not_null
+      - name: channel_name
+        tests:
+          - not_null
+      - name: total_sales
+        tests:
+          - not_null
+      - name: total_quantity
+        tests:
+          - not_null

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: s_fact_sales
+    columns:
+      - name: sk_product
+        tests: ['not_null']
+      - name: sk_customer
+        tests: ['not_null']
+      - name: sk_channel
+        tests: ['not_null']
+      - name: sk_date
+        tests: ['not_null'] 

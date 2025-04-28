@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: b_dim_product
+    columns:
+      - name: id_product
+        tests: ['unique', 'not_null']
+  - name: b_dim_channel
+    columns:
+      - name: id_channel
+        tests: ['unique', 'not_null']
+  - name: b_dim_customer
+    columns:
+      - name: id_customer
+        tests: ['unique', 'not_null']
+  - name: b_fact_sales
+    columns:
+      - name: sk_product
+        tests: ['not_null']
+      - name: sk_customer
+        tests: ['not_null']
+      - name: sk_channel
+        tests: ['not_null']
+      - name: sk_date
+        tests: ['not_null']
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - sk_product
+            - sk_customer
+            - sk_channel
+            - sk_date 
